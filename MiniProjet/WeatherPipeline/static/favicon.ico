@@ -1,0 +1,6 @@
+from flask import send_from_directory
+
+@routes.route('/favicon.ico')
+def favicon():
+    """Route pour le favicon."""
+    return send_from_directory('static', 'favicon.ico')
